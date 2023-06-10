@@ -1,0 +1,383 @@
+//discover
+
+.discover {
+
+    &__img {
+        background: url('../images/main-background.png') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 320px;
+        position: relative;
+        
+        
+
+        @media (min-width: $breakpoint-md) {
+            height: 400px;
+        }
+        @media (min-width: $breakpoint-lg) {
+            height: 550px;
+        }
+        @media (min-width: $breakpoint-xl) {
+            height: 640px;
+        }
+        @media (min-width: $breakpoint-xxl) {
+            height: 847px;
+        }
+
+        
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 18px;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 24px;
+            
+        }
+        @media (min-width: $breakpoint-lg) {
+            font-size: 27px;
+            line-height: 38px;
+            margin-bottom: 31px;
+        }
+    }
+
+    &__button {
+        font-family: 'Cardo';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        padding: 5px 25px;
+        border: 1px solid #FFF;
+        background: inherit;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 6px 30px;
+            
+        }
+        @media (min-width: $breakpoint-lg) {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 7px 40px;
+        }
+
+
+
+    }
+
+    &__text--sec {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 0.2px;
+        padding: 10px 10px;
+        background: rgba(5, 5, 5, 1);
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: $breakpoint-md) {
+            position: absolute;
+            bottom: 3px;
+            left: 20px;
+            transform: translateX(0);
+            padding: 15px 30px;
+            
+        }
+        @media (min-width: $breakpoint-lg) {
+            
+        }
+    }
+}
+
+//advantage
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+    gap: 40px;
+    
+
+
+    @media (min-width: $breakpoint-md) {
+        flex-wrap: wrap;
+        margin: 62px 0 50px;
+        
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 100px 0 60px;
+        
+    }
+    @media (min-width: $breakpoint-xl) {
+        gap: 0  ;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 80px;
+        gap: 40px;
+        @media (min-width: $breakpoint-md) {
+            padding: 0 40px;
+        }
+        @media (min-width: $breakpoint-lg) {
+            padding: 0;
+        }
+        @media (min-width: $breakpoint-xl) {
+            gap: 70px;
+            
+        }
+    }
+
+    &__list--item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        
+        @media (min-width: $breakpoint-md) {
+            
+            
+        }
+
+        
+        @media (min-width: $breakpoint-xl) {
+            gap: 20px;
+        }
+    }
+
+    &__item--img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__iten--text {
+        font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+
+    &__range {
+        
+        @media (min-width: $breakpoint-lg) {
+            
+        }
+    }
+}
+
+//gallery
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+        
+
+        @media (min-width: $breakpoint-md) {
+            width: 50%;
+            
+        }
+        @media (min-width: $breakpoint-lg) {
+            width: 25%;
+            
+        }
+
+        // Другой вариант
+        // parent:
+        // width: 100%;
+        // justify-content: space-between;
+        // child:
+        // object-fit: cover;
+        // calc(25% - 1px)
+    }
+}
+
+
+//graphic-card
+
+.graphic {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-bottom: 35px;
+
+    @media (min-width: $breakpoint-lg) {
+        margin-bottom: 70px;
+    }
+
+    &__card {
+        padding: 30px 35px 30px;
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: $breakpoint-md) {
+            flex: 1 1 49%;
+            padding: 60px 35px 50px;
+        }
+        @media (min-width: $breakpoint-lg) {
+            flex: 1 1 24%;
+        }
+    }
+
+    &__img {
+        margin-bottom: 20px;
+
+        @media (min-width: $breakpoint-md) {
+            margin-bottom: 35px;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 25px;
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    &__link {
+        text-align: center;
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        border-bottom: 1px solid #000;
+
+        & a {
+            display: block;
+        }
+    }
+}
+.white-back {
+    background: #FFF;
+}
+
+//companies
+
+.companies {
+    display: none;
+    z-index: -1;
+    opacity: 0;
+
+    @media (min-width: $breakpoint-lg) {
+        padding: 60px 10px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        opacity: 1;
+
+    }
+
+    &__title {
+        
+
+        @media (min-width: $breakpoint-lg) {
+            font-family: 'Cardo';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.3px;
+            color: rgba(69, 69, 69, 1);
+            margin-bottom: 41px;
+            display: block;
+            z-index: 1;
+            opacity: 1;
+        }
+       
+    }
+
+    &__img  {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+       
+        
+    }
+}
+
+

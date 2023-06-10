@@ -1,0 +1,292 @@
+.footer {
+
+    padding: 0 30px;
+    background: rgba(233, 233, 233, 1);
+    
+
+
+    @media (min-width: $breakpoint-lg) {
+        margin: 55px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    //first
+    &__block--first {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding: 20px 0 15px;
+        @media (min-width: $breakpoint-sm) {
+            gap: 60px;
+        }
+        @media (min-width: $breakpoint-md) {
+            gap: 50px;
+            justify-content: center;
+        }
+        
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            justify-content: center;
+            order: 1;
+            width: 60%;
+            gap: 100px;
+            margin-top: 55px;
+            padding: 0;
+        }
+        @media (min-width: $breakpoint-xl) {
+            gap: 150px;
+        }
+    
+    }
+
+    &__list--first {
+       
+       
+    }
+    &__list--sec {
+        
+       
+    }
+    &__list--third {
+       
+        
+    }
+
+    &__list--title {
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 26px;
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+        margin: 15px 0 20px;
+        cursor: pointer;
+
+        @media (min-width: $breakpoint-lg) {
+        margin: 0 0 45px;
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+        }
+        
+    }
+
+    &__list--icon {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+
+        @media (min-width: $breakpoint-lg) {
+            display: block;
+            opacity: 1;
+            z-index: 1;
+            margin-bottom: 13px;
+            text-align: center;
+        }
+
+        
+       
+    }
+
+    &__list--link  {
+
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+
+        & a {
+        display: block;
+        color: inherit; 
+        }
+        
+    }
+
+    
+
+
+
+    //sec
+
+
+    &__block--sec {
+        display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+
+        @media (min-width: $breakpoint-lg) {
+            order: 1;
+            width: 40%;
+        }
+    }
+
+    &__sec--text {
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__sec--text--border {
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        text-align: center;
+        margin-bottom: 31px;
+        padding: 5px 41px;
+        background: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+        border: 1px solid rgba(0, 0, 0, 1);
+        cursor: pointer;
+    }
+
+    &__sec--logo {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 19px;
+        cursor: pointer;
+
+        & img {
+            
+            object-fit: cover;
+        }
+    }
+
+    &__sec--star  {
+        cursor: pointer;
+
+        & img {
+        object-fit: cover;  
+        }
+        
+
+    }
+
+
+
+    //third
+
+    &__block--third {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+        padding: 30px 0;
+
+
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            order: 3;
+            width: 100%;
+            margin-top: 40px;
+            padding-bottom: 50px;
+            justify-content: center;
+            gap: 100px;
+            padding: 0 0 15px;
+        }
+    }
+
+    &__third--copy {
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 23px;
+        text-align: center;
+        order: 3;
+
+        @media (min-width: $breakpoint-lg) {
+            order: 1;
+        }
+        
+
+    }
+
+    &__third--banks  {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+        
+
+        @media (min-width: $breakpoint-sm) {
+            display: flex;
+            z-index: 1;
+            opacity: 1;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            height: auto;
+            order: 2;
+            cursor: pointer;
+        }
+
+        @media (min-width: $breakpoint-lg) {
+
+        }
+
+        & img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;  
+        }
+        
+    }
+
+    &__third--privacy {
+        display: flex;
+        order: 1;
+
+        @media (min-width: $breakpoint-lg) {
+            order: 3;
+        }
+
+    }
+
+    &__third--privacy--text {
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        padding-right: 5px;
+        
+        & a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    &__third--privacy--text-sec {
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        padding-left: 5px;
+        border-left: 1px solid #000;
+
+        & a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
